@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Asap:wght@400&display=swap");
+:root {
+  --constrast: rgba(69, 105, 144);
+  --secondary: rgba(2, 128, 144);
+}
+
+body {
+  background-color: #1b3980;
+  font-family: "Lato", sans-serif;
+  color: #535353;
+}
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 400ms, box-shadow 400ms;
+  box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+.login::before, .login::after {
+  content: "";
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: var(--constrast);
+  opacity: 0.15;
+  animation: wawes 7s infinite linear;
+}
+.login::after {
+  left: 35%;
+  bottom: -125%;
+  background-color: var(--secondary);
+  opacity: 0.2;
+  animation: wawes 8s infinite;
+}
+.login > input {
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 0 3px rgba(165, 165, 165, 0.4);
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+.login > button {
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #1b3980;
+  transition: background-color 300ms;
+}
+.login > button:hover {
+  background-color: #17306b;
+}
+
+#submitButton:disabled {
+  cursor: not-allowed;
+  background-color: #a5a5a5;
+}
+
+/* REQUIREMENTS CLASSES */
+#requirementsList {
+  margin-right: -20px;
+}
+#requirementsList .true {
+  color: #43b943;
+}
+#requirementsList .false {
+  color: #d61818;
+}
+
+.rate {
+  margin-top: -7px;
+  margin-bottom: -7px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  /* RATING OUTPUT CLASSES */
+}
+.rate #passwordRate {
+  margin-left: 5px;
+  max-height: 15px;
+}
+.rate #passwordRate .unsecured {
+  color: #d61818;
+}
+.rate #passwordRate .weak {
+  color: #f6900a;
+}
+.rate #passwordRate .basic {
+  color: #f6900a;
+}
+.rate #passwordRate .strong {
+  color: #43b943;
+}
+
+/* FOCUS ON PASSWORD MATCH CLASSES */
+.noMatch:focus {
+  border-color: #d61818;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #d61818;
+}
+
+.match:focus {
+  border-color: #43b943;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #43b943;
+}
+
+@keyframes wawes {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */

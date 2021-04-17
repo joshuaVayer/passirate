@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <form class="login" autocomplete="off">
+        <!-- Email input -->
+        <input id="email" type="text" placeholder="Email">
+        <!-- Password input (div required to print the requirements) -->
+        <input id="password" type="password" placeholder="Password">
+        <div class="rate">
+            <div id="passwordHelp" hidden>Strenght:</div>
+            <div id="passwordRate" class="form-text"></div>
+        </div>
+        <ul id="requirementsList" class="form-text"></ul>
+        <!-- Retype password input -->
+        <input id="rePassword" type="password" placeholder="Retype your password">
+        <!-- Submit button -->
+        <button type="submit" id="submitButton" disabled>Sign up</button>
+    </form>
+
+    <a href="https://codepen.io/davinci/" target="_blank">Codepen</a>
+
+    <!-- JQuerry -->
+    <script src="public/vendor/jQuery/jquerry-min.js"></script>
+    <!-- Personal javascript -->
+    <script src="public/js/main.js"></script>
+    <!-- Js dedicated to the example -->
+    <script src="public/js/example.js"></script>
+</body>
+
+</html>
