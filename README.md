@@ -1,7 +1,7 @@
 # Pasirate is password strenght calculator
 > Joshua Vayer
 
-Rate the password entered by the user and check the minimum requirements along the user is types.
+Rate the password entered by the user and check the minimum requirements along the user types.
 
 - [Getting started](#getting-started)
     - Requirements
@@ -39,7 +39,7 @@ CDN :
         verified: false, // leave false by default
     },
     ```
-- Set up your rating condition for each characters entered in the `rating` object, considering the following template :
+- Set up your ratings conditions for each characters typed in the `rating` object, considering the following template :
 
     ```js
     name: { // Name should be unique
@@ -80,7 +80,7 @@ Consider the following when defining your levels:
 
 ## Example
 
-Cheke the demo [here](#)
+Cheke the demo [here](#https://joshuavayer.github.io/passirate/)
 
-or you can download and run the example directory.
+You can download and run the example directory.
 
