@@ -10,6 +10,10 @@ body {
   color: #535353;
 }
 
+.mobile {
+  display: none;
+}
+
 .login {
   overflow: hidden;
   background-color: white;
@@ -146,6 +150,27 @@ a {
   right: 10px;
   bottom: 10px;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+  }
+  .mobile i {
+    font-size: 3em;
+    font-style: normal;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
